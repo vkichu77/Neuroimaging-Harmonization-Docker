@@ -34,6 +34,7 @@ Additionally, the environment provides:
 ```bash
 git clone https://github.com/<your-repo>/Neuroimaging-Harmonization-Docker.git
 cd Neuroimaging-Harmonization-Docker
+```
 
 ### 2. Build image with Docker Compose:
 
@@ -41,7 +42,7 @@ cd Neuroimaging-Harmonization-Docker
 docker compose build
 
 docker compose run --rm harmonize
-
+```
 
 ## 🧠 Harmonization Workflow Overview
 
@@ -63,7 +64,7 @@ flowchart TD
 
     E --> F[QC & Validation Notebook<br/>scanner variance, classifier accuracy]
     F --> G[Downstream Models<br/>stats, ML, connectomics]
-
+```
 
 🧠 Included Harmonization Methods (Summary)
 Structural MRI
