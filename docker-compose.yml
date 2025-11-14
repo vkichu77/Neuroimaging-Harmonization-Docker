@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  harmonize:
+    build: .
+    container_name: harmonize_container
+volumes:
+  - /data/bids:/data/bids
+  - ./harmonize_project:/data/harmonize_project
+environment:
+      - FSLOUTPUTTYPE=NIFTI_GZ
+    tty: true

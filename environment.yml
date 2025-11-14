@@ -1,0 +1,33 @@
+name: harmonize_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - statsmodels
+  - matplotlib
+  - seaborn
+  - nibabel
+  - nilearn
+  - jupyterlab
+  - mne
+  - dipy
+
+  # R
+  - r-base=4.2
+  - r-essentials
+  - r-reticulate
+  - r-lme4
+  - r-devtools
+  - r-remotes
+  
+  # pip packages
+  - pip:
+      - neuroHarmonize
+      - dMRIharmonization   # optional; replace if you have a specific repo/package

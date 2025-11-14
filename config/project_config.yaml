@@ -1,0 +1,17 @@
+bids_root: "/data/bids"
+
+derivatives: "/data/harmonize_project/derivatives"
+output_dir: "/data/harmonize_project/derivatives/harmonized"
+
+reference_scanner: "scanner29"
+
+covariates:
+  - age
+  - sex
+  - diagnosis
+
+batch_column: "scanner_id"
+subject_column: "subject_id"
+time_column: "age_at_scan"
+
+roi_pattern: "roi_.*"
