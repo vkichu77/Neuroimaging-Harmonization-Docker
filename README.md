@@ -100,20 +100,22 @@ Validation
 
 🛠 Unified Harmonization Interface (wrapper)
 Run any pipeline via:
-
+```bash
 python scripts/harmonize.py --modality <struct|struct-long|dmri-rish|fmri-covbat|fmri-voxel|task-fmri|qc> ...
-
+```
 
 Example:
+```bash
 python scripts/harmonize.py \
   --modality fmri-covbat \
   --lookup config/scanners_lookup_fmri.csv \
   --matrices_dir derivatives/preproc/fmri/connectivity_matrices \
   --outdir derivatives/harmonized/fmri/fc_covbat \
   --do_combat
-
+```
 
 🧩 Makefile Shortcuts
+```bash
 make harmonize-struct
 make harmonize-struct-long
 make harmonize-dmri-rish
@@ -121,7 +123,7 @@ make harmonize-fmri-covbat
 make harmonize-fmri-voxel
 make harmonize-taskfmri
 make qc-fmri
-
+```
 
  ## Project Folder Structure
 
