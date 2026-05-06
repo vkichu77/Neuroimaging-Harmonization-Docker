@@ -7,23 +7,23 @@ This repository provides a **fully reproducible Docker image** and set of harmon
 The system integrates:
 
 - **Structural MRI harmonization**
-  - ✔ Cross-sectional ComBat (Python / neuroHarmonize)
-  - ✔ Longitudinal ComBat (R)  
+  - Cross-sectional ComBat (Python / neuroHarmonize)
+  - Longitudinal ComBat (R)  
 - **Diffusion MRI harmonization**
-  - ✔ RISH-based signal-level harmonization (DIPY + optional GPU acceleration)
-  - ✔ MRtrix3 included for preprocessing + model fitting  
+  - RISH-based signal-level harmonization (DIPY + optional GPU acceleration)
+  - MRtrix3 included for preprocessing + model fitting  
 - **Functional MRI harmonization**
-  - ✔ CovBat-style covariance harmonization for FC matrices  
-  - ✔ Voxelwise fMRI ComBat (ALFF, fALFF, ReHo, ICA components, maps)  
-  - ✔ Task-fMRI beta map harmonization (contrast-wise ComBat)  
+  - CovBat-style covariance harmonization for FC matrices  
+  - Voxelwise fMRI ComBat (ALFF, fALFF, ReHo, ICA components, maps)  
+  - Task-fMRI beta map harmonization (contrast-wise ComBat)  
 
 Additionally, the environment provides:
 
-- ✔ BIDS-compatible project layout  
-- ✔ Standardized configuration (`project_config.yaml`)  
-- ✔ Validation notebook + QC scripts (scanner variance reduction, biological-effect preservation)  
-- ✔ A unified CLI (`harmonize.py`)  
-- ✔ Makefile shortcuts (`make harmonize-struct`, `make harmonize-dmri-rish`, …)
+- BIDS-compatible project layout  
+- Standardized configuration (`project_config.yaml`)  
+- Validation notebook + QC scripts (scanner variance reduction, biological-effect preservation)  
+- A unified CLI (`harmonize.py`)  
+- Makefile shortcuts (`make harmonize-struct`, `make harmonize-dmri-rish`, …)
 
 ---
 
